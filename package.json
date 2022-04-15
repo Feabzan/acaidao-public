@@ -1,0 +1,48 @@
+{
+    "name": "acai-dao",
+    "packageManager": "yarn@3.2.0",
+    "private": true,
+    "types": "./typechain/index.ts",
+    "main": "./typechain/index.ts",
+    "scripts": {
+        "accounts": "hardhat accounts",
+        "clean": "hardhat clean",
+        "test": "hardhat test --verbose",
+        "test-gas": "REPORT_GAS=true hardhat test",
+        "compile": "hardhat compile",
+        "local": "yarn hardhat node",
+        "deploy-local": "yarn hardhat run --network localhost scripts/deploy.ts",
+        "eslint": "eslint '**/*.{js,ts}'",
+        "eslint-fix": "eslint '**/*.{js,ts}' --fix",
+        "solhint": "solhint 'contracts/**/*.sol'",
+        "solhint-fix": "solhint 'contracts/**/*.sol' --fix"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@0.3.0-beta.12",
+        "@nomiclabs/hardhat-etherscan": "^3.0.3",
+        "@nomiclabs/hardhat-waffle": "^2.0.3",
+        "@openzeppelin/contracts": "^4.5.0",
+        "@typechain/ethers-v5": "^10.0.0",
+        "@typechain/hardhat": "^6.0.0",
+        "@types/mocha": "^9.1.0",
+        "@types/node": "^17.0.23",
+        "chai": "^4.3.6",
+        "dotenv": "^16.0.0",
+        "eslint": "^8.12.0",
+        "ethereum-waffle": "^3.4.4",
+        "ethers": "^5.6.2",
+        "hardhat": "^2.9.2",
+        "hardhat-deploy": "^0.11.4",
+        "hardhat-gas-reporter": "^1.0.8",
+        "mocha": "^9.2.2",
+        "moment": "^2.29.2",
+        "solhint": "^3.3.7",
+        "solidity-coverage": "^0.7.20",
+        "ts-node": "^10.7.0",
+        "typechain": "^8.0.0",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "bn.js": "^5.2.0"
+    }
+}
